@@ -1,0 +1,16 @@
+-keep class com.carlauncher.BluetoothActivity { <init>(); }
+-keep class com.carlauncher.EqualizerActivity { <init>(); }
+-keep class com.carlauncher.FilesActivity { <init>(); }
+-keep class com.carlauncher.MainActivity { <init>(); }
+-keep class com.carlauncher.MusicActivity { <init>(); }
+-keep class com.carlauncher.MusicService { <init>(); }
+-keep class com.carlauncher.NowPlayingService { <init>(); }
+-keep class com.carlauncher.RadioActivity { <init>(); }
+-keep class com.carlauncher.SettingsActivity { <init>(); }
+-keep class com.carlauncher.VideoActivity { <init>(); }
+-keep class com.carlauncher.AnalogClockView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.carlauncher.RoadView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.carlauncher.SpeedometerView { <init>(android.content.Context, android.util.AttributeSet); }
+

@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\layout_item_app.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\layout\\item_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_wall.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_wall.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_bg_main.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\bg_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_prev.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_prev.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_bt.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_bt.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_pause.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_pause.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_drive.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_drive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_bt.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_bt.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_bg_tile.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\bg_tile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_hotspot.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_hotspot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_eq.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_eq.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_speed.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_speed.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_bg_sel.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\bg_sel.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_wifi.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_wifi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\layout_main.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_plus.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_plus.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_next.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_radio.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_music.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_music.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_disc.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_disc.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_bg_picker.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\bg_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_play.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_video.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_video.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_android.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_android.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_bg_label.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\bg_label.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_apps.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_apps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\layout_slot.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\layout\\slot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_radio.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_si_home.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\si_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_wifi.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_wifi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-main-6:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "com.carlauncher.app-release-5:/drawable_ic_files.xml.flat",
+        "source": "com.carlauncher.app-main-6:/drawable/ic_files.xml"
+    }
+]

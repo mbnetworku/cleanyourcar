@@ -1,0 +1,184 @@
+Marking drawable:ic_pause:2130771982 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_play:2130771983 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_prev:2130771985 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_next:2130771981 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_music:2130771980 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_bt:2130771975 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_wifi:2130771989 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_settings:2130771987 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking layout:item_app:2130903040 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:label:2130837512 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:icon:2130837511 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_add:2130771973 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_disc:2130771976 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_video:2130771988 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_radio:2130771986 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_files:2130771978 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_eq:2130771977 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking style:PickerTheme:2131034113 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:bg_sel:2130771971 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_home:2130771993 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_wifi:2130771998 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_bt:2130771991 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_android:2130771990 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_radio:2130771995 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_speed:2130771996 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_wall:2130771997 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_drive:2130771992 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:si_hotspot:2130771994 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:sideSlots:2130837523 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking layout:slot:2130903042 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:slotIcon:2130837524 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:slotLabel:2130837525 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_plus:2130771984 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking layout:main:2130903041 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:root:2130837522 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:speedo:2130837526 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:road:2130837521 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:analog:2130837504 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:dateText:2130837508 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:leftCol:2130837513 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:clockCard:2130837507 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:mediaCard:2130837520 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:heroCard:2130837510 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:dock:2130837509 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:btnApps:2130837505 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:mArt:2130837514 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:mTitle:2130837519 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:mSub:2130837518 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:mPlay:2130837516 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:btnSettings:2130837506 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:mPrev:2130837517 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking id:mNext:2130837515 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+@drawable/bg_label : reachable=false
+@drawable/bg_main : reachable=false
+@drawable/bg_picker : reachable=false
+@drawable/bg_sel : reachable=true
+@drawable/bg_tile : reachable=false
+@drawable/ic_add : reachable=true
+@drawable/ic_apps : reachable=false
+@drawable/ic_bt : reachable=true
+@drawable/ic_disc : reachable=true
+@drawable/ic_eq : reachable=true
+@drawable/ic_files : reachable=true
+@drawable/ic_launcher : reachable=true
+@drawable/ic_music : reachable=true
+@drawable/ic_next : reachable=true
+@drawable/ic_pause : reachable=true
+@drawable/ic_play : reachable=true
+@drawable/ic_plus : reachable=true
+@drawable/ic_prev : reachable=true
+@drawable/ic_radio : reachable=true
+@drawable/ic_settings : reachable=true
+@drawable/ic_video : reachable=true
+@drawable/ic_wifi : reachable=true
+@drawable/si_android : reachable=true
+@drawable/si_bt : reachable=true
+@drawable/si_drive : reachable=true
+@drawable/si_home : reachable=true
+@drawable/si_hotspot : reachable=true
+@drawable/si_radio : reachable=true
+@drawable/si_speed : reachable=true
+@drawable/si_wall : reachable=true
+@drawable/si_wifi : reachable=true
+@id/analog : reachable=true
+@id/btnApps : reachable=true
+@id/btnSettings : reachable=true
+@id/clockCard : reachable=true
+@id/dateText : reachable=true
+@id/dock : reachable=true
+@id/heroCard : reachable=true
+@id/icon : reachable=true
+@id/label : reachable=true
+@id/leftCol : reachable=true
+@id/mArt : reachable=true
+@id/mNext : reachable=true
+@id/mPlay : reachable=true
+@id/mPrev : reachable=true
+@id/mSub : reachable=true
+@id/mTitle : reachable=true
+@id/mediaCard : reachable=true
+@id/road : reachable=true
+@id/root : reachable=true
+@id/sideSlots : reachable=true
+@id/slotIcon : reachable=true
+@id/slotLabel : reachable=true
+@id/speedo : reachable=true
+@layout/item_app : reachable=true
+    @drawable/bg_label
+@layout/main : reachable=true
+    @drawable/ic_apps
+    @drawable/ic_disc
+    @drawable/ic_prev
+    @drawable/bg_sel
+    @drawable/ic_play
+    @drawable/ic_next
+    @drawable/ic_settings
+    @drawable/bg_tile
+@layout/slot : reachable=true
+    @drawable/bg_sel
+    @drawable/bg_label
+@string/app_name : reachable=true
+@style/AppTheme : reachable=true
+    @drawable/bg_main
+@style/PickerTheme : reachable=true
+
+The root reachable resources are:
+ drawable:bg_sel:2130771971
+ drawable:ic_add:2130771973
+ drawable:ic_bt:2130771975
+ drawable:ic_disc:2130771976
+ drawable:ic_eq:2130771977
+ drawable:ic_files:2130771978
+ drawable:ic_launcher:2130771979
+ drawable:ic_music:2130771980
+ drawable:ic_next:2130771981
+ drawable:ic_pause:2130771982
+ drawable:ic_play:2130771983
+ drawable:ic_plus:2130771984
+ drawable:ic_prev:2130771985
+ drawable:ic_radio:2130771986
+ drawable:ic_settings:2130771987
+ drawable:ic_video:2130771988
+ drawable:ic_wifi:2130771989
+ drawable:si_android:2130771990
+ drawable:si_bt:2130771991
+ drawable:si_drive:2130771992
+ drawable:si_home:2130771993
+ drawable:si_hotspot:2130771994
+ drawable:si_radio:2130771995
+ drawable:si_speed:2130771996
+ drawable:si_wall:2130771997
+ drawable:si_wifi:2130771998
+ id:analog:2130837504
+ id:btnApps:2130837505
+ id:btnSettings:2130837506
+ id:clockCard:2130837507
+ id:dateText:2130837508
+ id:dock:2130837509
+ id:heroCard:2130837510
+ id:icon:2130837511
+ id:label:2130837512
+ id:leftCol:2130837513
+ id:mArt:2130837514
+ id:mNext:2130837515
+ id:mPlay:2130837516
+ id:mPrev:2130837517
+ id:mSub:2130837518
+ id:mTitle:2130837519
+ id:mediaCard:2130837520
+ id:road:2130837521
+ id:root:2130837522
+ id:sideSlots:2130837523
+ id:slotIcon:2130837524
+ id:slotLabel:2130837525
+ id:speedo:2130837526
+ layout:item_app:2130903040
+ layout:main:2130903041
+ layout:slot:2130903042
+ string:app_name:2130968576
+ style:AppTheme:2131034112
+ style:PickerTheme:2131034113
+Unused resources are: 
+ drawable:bg_picker:2130771970
+Resource shrinking did not work (grew from 23640 to 23916); using original instead

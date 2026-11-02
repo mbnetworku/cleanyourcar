@@ -1,0 +1,8 @@
+com.carlauncher.app-pngs-0 D:\Android\re2\CarLauncher\app\build\generated\res\pngs\release
+com.carlauncher.app-resValues-1 D:\Android\re2\CarLauncher\app\build\generated\res\resValues\release
+com.carlauncher.app-packageReleaseResources-2 D:\Android\re2\CarLauncher\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.carlauncher.app-packageReleaseResources-3 D:\Android\re2\CarLauncher\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.carlauncher.app-merged-not-compiled-resources-4 D:\Android\re2\CarLauncher\app\build\intermediates\merged-not-compiled-resources\release
+com.carlauncher.app-release-5 D:\Android\re2\CarLauncher\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.carlauncher.app-main-6 D:\Android\re2\CarLauncher\app\src\main\res
+com.carlauncher.app-release-7 D:\Android\re2\CarLauncher\app\src\release\res

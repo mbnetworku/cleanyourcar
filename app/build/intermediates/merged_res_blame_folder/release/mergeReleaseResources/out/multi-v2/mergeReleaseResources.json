@@ -1,0 +1,84 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.carlauncher.app-release-5:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Android\\re2\\CarLauncher\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "-1,8",
+                        "startColumns": "-1,4",
+                        "startOffsets": "-1,354",
+                        "endLines": "-1,14",
+                        "endColumns": "-1,12",
+                        "endOffsets": "-1,758"
+                    },
+                    "to": {
+                        "startLines": "3,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,442",
+                        "endLines": "8,15",
+                        "endColumns": "12,12",
+                        "endOffsets": "437,846"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\re2\\CarLauncher\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "49",
+                        "endOffsets": "100"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Muslim\\.gradle\\daemon\\8.7\\com.carlauncher.app-release-5:\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Android\\re2\\CarLauncher\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "1,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "16,354",
+                        "endLines": "6,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "348,690"
+                    },
+                    "to": {
+                        "startLines": "3,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,442",
+                        "endLines": "8,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "437,778"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\re2\\CarLauncher\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "49",
+                        "endOffsets": "61"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "49",
+                        "endOffsets": "100"
+                    }
+                }
+            ]
+        }
+    ]
+}
