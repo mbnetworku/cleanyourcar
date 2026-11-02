@@ -22,8 +22,8 @@ Target device during development: amlogic MBOX, Android 5.1.1 (API 22), 1920x108
 ```bash
 # from the project root
 D:/Android/re2/tools/gradle-8.7/bin/gradle assembleRelease --offline
-cp app/build/outputs/apk/release/app-release.apk CarLauncher.apk
-adb -s 192.168.3.33:5555 install -r CarLauncher.apk
+cp app/build/outputs/apk/release/app-release.apk release/CarLauncher.apk
+adb -s 192.168.3.33:5555 install -r release/CarLauncher.apk
 adb -s 192.168.3.33:5555 shell am start -n com.carlauncher/.MainActivity
 ```
 
@@ -53,3 +53,13 @@ adb -s 192.168.3.33:5555 shell am start -n com.carlauncher/.MainActivity
 ## Preferences (SharedPreferences)
 
 `launcher` (theme, slots, layout, speedometer, car), `music`, `eq`, `tuner`, `radio` (legacy).
+
+## Repository layout
+
+```
+README.md  LICENSE.md  SECURITY.md  CLAUDE.md   project front page and rules (GitHub reads these at the root)
+app/                                            Android app source (Kotlin, resources, assets)
+docs/      TECHNICAL.md  PRODUCTION.md  screens/ documentation and screenshots
+release/   CarLauncher.apk                      the installable app
+build.gradle.kts  settings.gradle.kts  gradle.properties  local.properties   build setup
+```

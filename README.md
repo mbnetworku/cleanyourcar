@@ -58,9 +58,9 @@ One small APK gives you the launcher plus Music, Videos, Radio, Bluetooth, Files
 
 ## 🚀 Install
 
-1. Copy **`CarLauncher.apk`** to the unit and open it, or from a PC run:
+1. Copy **[`release/CarLauncher.apk`](release/CarLauncher.apk)** to the unit and open it, or from a PC run:
    ```bash
-   adb install -r CarLauncher.apk
+   adb install -r release/CarLauncher.apk
    ```
 2. Press **Home** and choose **Car Launcher → Always**, or use *Settings → Speed up → Make Car Launcher the default*.
 3. *(Optional)* To let *Speed up* turn system animations off, run this once from a PC:
@@ -75,7 +75,7 @@ gradle assembleRelease
 # output: app/build/outputs/apk/release/app-release.apk
 ```
 
-Requires JDK 17 and the Android SDK (compileSdk 34). The SDK path is set in `local.properties`. See [TECHNICAL.md](TECHNICAL.md) for the architecture, and [PRODUCTION.md](PRODUCTION.md) for release steps.
+Requires JDK 17 and the Android SDK (compileSdk 34). The SDK path is set in `local.properties`. See [TECHNICAL.md](docs/TECHNICAL.md) for the architecture, and [PRODUCTION.md](docs/PRODUCTION.md) for release steps.
 
 ---
 
@@ -95,8 +95,8 @@ Requires JDK 17 and the Android SDK (compileSdk 34). The SDK path is set in `loc
 
 | File | What's inside |
 |---|---|
-| [TECHNICAL.md](TECHNICAL.md) | Architecture, components, rendering, media and radio internals |
-| [PRODUCTION.md](PRODUCTION.md) | Release checklist, signing and device notes |
+| [TECHNICAL.md](docs/TECHNICAL.md) | Architecture, components, rendering, media and radio internals |
+| [PRODUCTION.md](docs/PRODUCTION.md) | Release checklist, signing and device notes |
 | [SECURITY.md](SECURITY.md) | Permissions, data handling and how to report a problem |
 | [LICENSE.md](LICENSE.md) | MIT for code, and the terms for bundled images |
 | [CLAUDE.md](CLAUDE.md) | Guide for contributors and AI assistants |

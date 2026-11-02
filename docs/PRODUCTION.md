@@ -7,7 +7,7 @@
    - Add a `release` signing config that reads the passwords from environment variables or `~/.gradle/gradle.properties`. Never commit them.
    - Keep the keystore backed up. Updates must be signed with the same key.
 2. **Version**: bump `versionCode` and `versionName` in `app/build.gradle.kts`.
-3. **Build**: `gradle assembleRelease`, then copy `app/build/outputs/apk/release/app-release.apk` to `CarLauncher.apk`.
+3. **Build**: `gradle assembleRelease`, then copy `app/build/outputs/apk/release/app-release.apk` to `release/CarLauncher.apk`.
 4. **Asset rights**: confirm you have the right to redistribute every image in `assets/wall` and `assets/cars` (see LICENSE.md). Replace any you do not.
 5. **Smoke test on a real unit**:
    - Home: slots, dock, clock, speedometer with GPS while driving, light/dark/auto
