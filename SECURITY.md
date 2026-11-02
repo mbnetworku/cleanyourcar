@@ -72,3 +72,7 @@ The only network request the app makes is the optional random wallpaper download
 ## 🚗 Driving safety
 
 Use the launcher's controls only when it's safe and legal to do so. Set up wallpapers, Wi-Fi, pairing and other settings while the vehicle is parked.
+
+---
+
+© 2026 MB

@@ -11,7 +11,7 @@ Car Launcher has two parts with different terms:
 
 ## 💻 MIT License
 
-Copyright © 2026 Car Launcher contributors
+Copyright © 2026 MB
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

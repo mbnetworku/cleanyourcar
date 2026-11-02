@@ -10,7 +10,7 @@ One small APK gives you the launcher plus Music, Videos, Radio, Bluetooth, Files
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-7F52FF?logo=kotlin&logoColor=white)
 ![No libraries](https://img.shields.io/badge/dependencies-none-0A84FF)
 ![APK size](https://img.shields.io/badge/APK-~8%20MB-FF9F0A)
-![License](https://img.shields.io/badge/code-MIT-lightgrey)
+![License](https://img.shields.io/badge/code-MIT-lightgrey) ![Copyright](https://img.shields.io/badge/©-MB-black)
 
 <img src="docs/screens/home.jpg" alt="Car Launcher home screen" width="900">
 
@@ -104,5 +104,7 @@ Requires JDK 17 and the Android SDK (compileSdk 34). The SDK path is set in `loc
 <div align="center">
 
 Made for the road 🛣️
+
+© 2026 MB
 
 </div>
