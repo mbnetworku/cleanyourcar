@@ -1,8 +1,17 @@
-# License
+# 📄 License
 
-## Source code: MIT License
+Car Launcher has two parts with different terms:
 
-Copyright (c) 2026 Car Launcher contributors
+| Part | License |
+|---|---|
+| 💻 **Source code** (`app/src/main/java`, `res`, build files, docs) | **MIT License**, below |
+| 🖼 **Bundled images** (`app/src/main/assets/wall`, `app/src/main/assets/cars`, `docs/screens`) | **Not** covered by MIT. See the image notice below |
+
+---
+
+## 💻 MIT License
+
+Copyright © 2026 Car Launcher contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,16 +31,30 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Images are not covered
+### In plain words
 
-The MIT License above covers the source code only. It does **not** cover these bundled images:
+| ✅ You may | 📌 You must | ⚠️ No guarantee |
+|---|---|---|
+| Use it for personal or commercial purposes | Keep the copyright and license notice in copies | The software comes "as is" |
+| Change it and share your changes | | The authors aren't liable for any damage |
+| Include it in other projects | | |
 
-- `app/src/main/assets/wall/*`: wallpaper photos
-- `app/src/main/assets/cars/*`: car photos
+---
 
-These were supplied by the project owner from third-party sources and may be protected by copyright or
-trademarks (including car makers' logos and model names). They are included for personal use. Before
-publishing or redistributing the app, replace them with images you own or that are licensed for redistribution.
+## 🖼 Image notice
 
-Car makes and model names mentioned in this project are trademarks of their respective owners. They are used
-only to describe the vehicles, and no endorsement is implied.
+The wallpapers and car photos in `assets/wall` and `assets/cars` were supplied by the project owner from
+third-party sources. They may be protected by copyright, and the car photos show manufacturers' logos and
+model names, which are trademarks of their owners.
+
+- They are included for **personal use** of this launcher.
+- They are **not** licensed under MIT.
+- **Before publishing or selling the app**, replace them with images you own or that are licensed for redistribution.
+
+The screenshots in `docs/screens` show this app and contain those same images.
+
+## ™️ Trademarks
+
+Lexus, Tesla, Toyota, Corolla, Camry, FJ Cruiser, Mitsubishi, Lancer, Pajero, Android, Apple TV and other names
+mentioned are trademarks of their respective owners. They are used only to describe vehicles and systems, and no
+endorsement is implied.
