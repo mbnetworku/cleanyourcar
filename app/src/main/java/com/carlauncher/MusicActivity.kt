@@ -103,7 +103,7 @@ class MusicActivity : Activity() {
         Themes.update(prefs)
         accent = Themes.accent(prefs)
         buildUi()
-        askPermission()
+        Storage.ensure(this, "your music")
         if (MusicLibrary.tracks.isEmpty() && !MusicLibrary.scanning) MusicLibrary.scan(this)
         refreshSources()
         selectTab(0)
@@ -133,6 +133,8 @@ class MusicActivity : Activity() {
         })
         updateNow()
         ui.post(tick)
+        // Access may have just been granted in system settings.
+        if (Storage.hasAccess(this) && MusicLibrary.tracks.isEmpty() && !MusicLibrary.scanning) MusicLibrary.scan(this)
     }
 
     override fun onPause() {
@@ -310,7 +312,7 @@ class MusicActivity : Activity() {
         listOf(nav, listPanel, nowPanel).forEachIndexed { i, v ->
             v.alpha = 0f
             v.translationY = px(40).toFloat()
-            v.animate().alpha(1f).translationY(0f).setStartDelay(60L * i).setDuration(320)
+            v.animate().alpha(1f).translationY(0f).setStartDelay(30L * i).setDuration(180)
                 .setInterpolator(DecelerateInterpolator()).start()
         }
     }

@@ -87,7 +87,9 @@ class FilesActivity : Activity() {
         dn = resources.displayMetrics.density
         Themes.update(prefs)
         accent = Themes.accent(prefs)
-        if (Build.VERSION.SDK_INT >= 23) requestPermissions(arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE), 6)
+        Storage.ensure(this, "your files")
+        // Android 7+ rejects file:// links to other apps (images, PDFs, APKs) without this; there is no AndroidX FileProvider here.
+        android.os.StrictMode.setVmPolicy(android.os.StrictMode.VmPolicy.Builder().build())
         build()
         loadDrives()
         openDrive(sources.firstOrNull())
@@ -101,6 +103,7 @@ class FilesActivity : Activity() {
 
     override fun onResume() {
         super.onResume()
+        if (Storage.hasAccess(this) && items.isEmpty()) { loadDrives(); show(dir ?: sources.firstOrNull()?.root.also { root = it }) }
         registerReceiver(mountReceiver, IntentFilter().apply {
             addAction(Intent.ACTION_MEDIA_MOUNTED); addAction(Intent.ACTION_MEDIA_UNMOUNTED)
             addAction(Intent.ACTION_MEDIA_REMOVED); addAction(Intent.ACTION_MEDIA_EJECT)
@@ -243,7 +246,7 @@ class FilesActivity : Activity() {
         listOf(top, panel).forEachIndexed { i, v ->
             v.alpha = 0f
             v.translationY = px(30).toFloat()
-            v.animate().alpha(1f).translationY(0f).setStartDelay(70L * i).setDuration(300).setInterpolator(DecelerateInterpolator()).start()
+            v.animate().alpha(1f).translationY(0f).setStartDelay(30L * i).setDuration(180).setInterpolator(DecelerateInterpolator()).start()
         }
     }
 
@@ -685,8 +688,8 @@ class FilesActivity : Activity() {
             val col = v.getChildAt(1) as LinearLayout
             (col.getChildAt(0) as TextView).text = f.name
             (col.getChildAt(1) as TextView).text = if (f.isDirectory) {
-                val n = f.list()?.count { !it.startsWith(".") } ?: 0
-                "$n items  ·  ${dateFmt.format(Date(f.lastModified()))}"
+                // Folder contents aren't counted per row: listing every folder makes USB drives slow to scroll.
+                "Folder  ·  ${dateFmt.format(Date(f.lastModified()))}"
             } else "${size(f.length())}  ·  ${dateFmt.format(Date(f.lastModified()))}"
             (v.getChildAt(2) as TextView).apply {
                 // A tick in selection mode, an arrow on folders otherwise.

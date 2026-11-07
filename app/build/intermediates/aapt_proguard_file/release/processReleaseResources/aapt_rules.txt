@@ -5,6 +5,7 @@
 -keep class com.carlauncher.MusicActivity { <init>(); }
 -keep class com.carlauncher.MusicService { <init>(); }
 -keep class com.carlauncher.NowPlayingService { <init>(); }
+-keep class com.carlauncher.PermissionsActivity { <init>(); }
 -keep class com.carlauncher.RadioActivity { <init>(); }
 -keep class com.carlauncher.SettingsActivity { <init>(); }
 -keep class com.carlauncher.VideoActivity { <init>(); }

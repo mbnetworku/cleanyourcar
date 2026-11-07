@@ -225,6 +225,14 @@ class RadioActivity : Activity() {
         row2.addView(button("SEARCH ALL", 15f, 160, 46) { searchAll() })
         row2.addView(button("EQ", 15f, 90, 46) { startActivity(Intent(this, EqualizerActivity::class.java)) })
         tunerPanel.addView(row2, LinearLayout.LayoutParams(match, wrap).apply { topMargin = px(10) })
+        // Without a supported tuner driver, hand over to the head unit's own radio app if it has one.
+        if (!tunerOk) carRadioApp()?.let { (pkg, name) ->
+            val r = LinearLayout(this).apply { gravity = Gravity.CENTER }
+            r.addView(button("Open the car's radio:  $name", 16f, 0, 52) {
+                packageManager.getLaunchIntentForPackage(pkg)?.let { startActivity(it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+            }.apply { background = pill(true, 26); setPadding(px(26), 0, px(26), 0) })
+            tunerPanel.addView(r, LinearLayout.LayoutParams(match, wrap).apply { topMargin = px(12) })
+        }
         tunerPanel.addView(text("Region: ${region.name}  (from time zone ${TimeZone.getDefault().id})", 12f, 0xBBFFFFFF.toInt()).apply {
             gravity = Gravity.CENTER
             setPadding(0, px(12), 0, 0)
@@ -253,8 +261,19 @@ class RadioActivity : Activity() {
         listOf(tunerPanel, side).forEachIndexed { i, v ->
             v.alpha = 0f
             v.translationY = px(40).toFloat()
-            v.animate().alpha(1f).translationY(0f).setStartDelay(80L * i).setDuration(320).setInterpolator(DecelerateInterpolator()).start()
+            v.animate().alpha(1f).translationY(0f).setStartDelay(30L * i).setDuration(180).setInterpolator(DecelerateInterpolator()).start()
         }
+    }
+
+    /** The head unit's own FM/AM app (package and name), found by common names used by car-radio makers. */
+    private fun carRadioApp(): Pair<String, String>? {
+        val pm = packageManager
+        val words = listOf("radio", "fm", "tuner", "am/fm")
+        return pm.queryIntentActivities(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER), 0)
+            .map { it.activityInfo.packageName to it.loadLabel(pm).toString() }
+            .filter { (p, l) -> p != packageName && words.any { w -> l.lowercase().contains(w) || p.lowercase().contains(".$w") } }
+            .filter { (p, l) -> !l.lowercase().contains("internet") && !p.contains("tunein") }
+            .firstOrNull()
     }
 
     // ---- tuning ----

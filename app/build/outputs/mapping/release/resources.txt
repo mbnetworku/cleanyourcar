@@ -2,21 +2,21 @@ Marking drawable:ic_pause:2130771982 reachable: referenced from D:\Android\re2\C
 Marking drawable:ic_play:2130771983 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_prev:2130771985 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_next:2130771981 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking drawable:ic_music:2130771980 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking drawable:ic_bt:2130771975 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking drawable:ic_wifi:2130771989 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking drawable:ic_settings:2130771987 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking layout:item_app:2130903040 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:label:2130837512 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking id:icon:2130837511 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_add:2130771973 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_music:2130771980 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_disc:2130771976 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_bt:2130771975 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_settings:2130771987 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:ic_wifi:2130771989 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking style:PickerTheme:2131034113 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
+Marking drawable:bg_sel:2130771971 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_video:2130771988 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_radio:2130771986 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_files:2130771978 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:ic_eq:2130771977 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking style:PickerTheme:2131034113 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
-Marking drawable:bg_sel:2130771971 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:si_home:2130771993 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:si_wifi:2130771998 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
 Marking drawable:si_bt:2130771991 reachable: referenced from D:\Android\re2\CarLauncher\app\build\intermediates\dex\release\minifyReleaseWithR8\classes.dex
@@ -120,7 +120,6 @@ Marking id:mNext:2130837515 reachable: referenced from D:\Android\re2\CarLaunche
     @drawable/bg_label
 @string/app_name : reachable=true
 @style/AppTheme : reachable=true
-    @drawable/bg_main
 @style/PickerTheme : reachable=true
 
 The root reachable resources are:
@@ -180,5 +179,5 @@ The root reachable resources are:
  style:AppTheme:2131034112
  style:PickerTheme:2131034113
 Unused resources are: 
+ drawable:bg_main:2130771969
  drawable:bg_picker:2130771970
-Resource shrinking did not work (grew from 23640 to 23916); using original instead

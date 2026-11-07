@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Car Launcher</string>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
-        <item name="android:windowBackground">@drawable/bg_main</item>
+        <item name="android:windowBackground">@null</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:colorBackground">#0B1620</item>

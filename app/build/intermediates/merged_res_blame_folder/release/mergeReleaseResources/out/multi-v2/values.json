@@ -6,30 +6,28 @@
                 {
                     "source": "D:\\Android\\re2\\CarLauncher\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "1,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "16,354",
-                        "endLines": "6,13",
-                        "endColumns": "12,12",
-                        "endOffsets": "348,690"
+                        "startLines": "-1,8",
+                        "startColumns": "-1,4",
+                        "startOffsets": "-1,354",
+                        "endLines": "-1,14",
+                        "endColumns": "-1,12",
+                        "endOffsets": "-1,758"
                     },
                     "to": {
                         "startLines": "3,9",
                         "startColumns": "4,4",
                         "startOffsets": "105,442",
-                        "endLines": "8,14",
+                        "endLines": "8,15",
                         "endColumns": "12,12",
-                        "endOffsets": "437,778"
+                        "endOffsets": "437,846"
                     }
                 },
                 {
                     "source": "D:\\Android\\re2\\CarLauncher\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "49",
-                        "endOffsets": "61"
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
                     },
                     "to": {
                         "startLines": "2",
@@ -47,20 +45,20 @@
                 {
                     "source": "D:\\Android\\re2\\CarLauncher\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "-1,8",
-                        "startColumns": "-1,4",
-                        "startOffsets": "-1,354",
-                        "endLines": "-1,14",
-                        "endColumns": "-1,12",
-                        "endOffsets": "-1,758"
+                        "startLines": "1,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "16,-1",
+                        "endLines": "6,-1",
+                        "endColumns": "12,-1",
+                        "endOffsets": "336,-1"
                     },
                     "to": {
                         "startLines": "3,9",
                         "startColumns": "4,4",
-                        "startOffsets": "105,442",
+                        "startOffsets": "105,430",
                         "endLines": "8,15",
                         "endColumns": "12,12",
-                        "endOffsets": "437,846"
+                        "endOffsets": "425,834"
                     }
                 },
                 {

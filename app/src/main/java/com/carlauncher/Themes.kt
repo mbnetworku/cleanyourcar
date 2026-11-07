@@ -137,14 +137,21 @@ object Themes {
     fun backgroundKey(ctx: Context, p: SharedPreferences): String =
         (if (usePhoto(ctx, p)) "photo:${photoFile(ctx).lastModified()}:${p.getInt("dim", 8)}" else "grad:${p.getInt("bg", 0)}") + dark
 
+    /** The decoded wallpaper photo, kept so every screen that opens reuses it instead of decoding 1920x1080 again. */
+    private var photoCache: Pair<String, android.graphics.Bitmap>? = null
+
     fun backgroundDrawable(ctx: Context, p: SharedPreferences): Drawable {
         if (usePhoto(ctx, p)) {
             val path = photoFile(ctx).path
-            val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
-            BitmapFactory.decodeFile(path, bounds)
-            var sample = 1
-            while (bounds.outWidth / (sample * 2) >= 1920) sample *= 2
-            val bmp = BitmapFactory.decodeFile(path, BitmapFactory.Options().apply { inSampleSize = sample })
+            val key = path + photoFile(ctx).lastModified()
+            val bmp = photoCache?.takeIf { it.first == key }?.second ?: run {
+                val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+                BitmapFactory.decodeFile(path, bounds)
+                var sample = 1
+                while (bounds.outWidth / (sample * 2) >= 1920) sample *= 2
+                BitmapFactory.decodeFile(path, BitmapFactory.Options().apply { inSampleSize = sample; inPreferredConfig = android.graphics.Bitmap.Config.RGB_565 })
+                    ?.also { photoCache = key to it }
+            }
             if (bmp != null) {
                 return LayerDrawable(arrayOf(BitmapDrawable(ctx.resources, bmp), ColorDrawable(((p.getInt("dim", 8) + if (dark) 30 else 0).coerceAtMost(95) * 255 / 100 shl 24))))
             }

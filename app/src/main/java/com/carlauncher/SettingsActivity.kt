@@ -371,6 +371,11 @@ class SettingsActivity : Activity() {
         content.addView(toggle("Show speed in mph", "mph", false))
         content.addView(hint("Tap an app slot on the home screen to open it. Hold a slot to change or clear it."))
 
+        content.addView(label("Permissions"))
+        buttonRow(button(if (PermissionsActivity.missing(this)) "Some permissions are missing: review" else "✓ All permissions allowed: review") {
+            startActivity(Intent(this, PermissionsActivity::class.java))
+        })
+
         content.addView(label("Now playing"))
         buttonRow(button("Allow now-playing access") {
             try {
@@ -1068,6 +1073,63 @@ class SettingsActivity : Activity() {
     }
 
 
+    /**
+     * Read-only probe of the head unit: build and firmware properties, the vendor radio/MCU interfaces each
+     * common head-unit family ships, radio-related apps and services, and kernel radio nodes.
+     */
+    private fun radioReport(): String {
+        val out = StringBuilder()
+        fun prop(k: String) = try {
+            Class.forName("android.os.SystemProperties").getMethod("get", String::class.java).invoke(null, k) as String
+        } catch (e: Throwable) { "" }
+        out.append("Board     ${Build.BOARD} / ${Build.HARDWARE}\n")
+        out.append("Model     ${Build.MANUFACTURER} ${Build.MODEL}\n")
+        out.append("Android   ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})\n")
+        for (k in listOf("ro.build.display.id", "ro.product.board", "ro.board.platform", "ro.fota.version",
+                "persist.sys.mcu.version", "ro.mcu.version", "ro.build.version.incremental")) {
+            prop(k).takeIf { it.isNotBlank() }?.let { out.append("${k.padEnd(28)} $it\n") }
+        }
+        out.append("\nRadio interfaces found:\n")
+        val classes = listOf(
+            "android.tw.john.TWUtil" to "Topway / TW",
+            "android.microntek.CarManager" to "Microntek (MTC)",
+            "android.microntek.mtcser.MTCService" to "Microntek service",
+            "com.syu.ipc.RemoteModuleProxy" to "FYT (SYU)",
+            "com.syu.ipc.IRemoteToolkit" to "FYT toolkit",
+            "android.car.hardware.radio.CarRadioManager" to "Android Automotive radio",
+            "android.hardware.radio.RadioManager" to "Android broadcast radio",
+            "com.hzbhd.proxy.RadioManager" to "HZBHD",
+            "com.ts.MainUI.RadioManager" to "TS",
+            "com.yuntian.radio.RadioManager" to "YT",
+            "android.yt.YtManager" to "YT"
+        )
+        var any = false
+        for ((cls, name) in classes) {
+            val ok = try { Class.forName(cls); true } catch (e: Throwable) { false }
+            if (ok) { out.append("  ✓ $name  ($cls)\n"); any = true }
+        }
+        if (!any) out.append("  none of the known ones\n")
+        out.append("\nRadio-related apps:\n")
+        val words = listOf("radio", "fm", "tuner", "mcu", "car", ".tw.", "syu", "microntek", "yt", "canbus", "bt", "phone")
+        packageManager.getInstalledPackages(0).map { it.packageName }.sorted()
+            .filter { p -> words.any { p.lowercase().contains(it) } && !p.startsWith("com.google") && p != packageName }
+            .forEach { p ->
+                val label = try { packageManager.getApplicationLabel(packageManager.getApplicationInfo(p, 0)) } catch (e: Exception) { "" }
+                out.append("  $p  $label\n")
+            }
+        out.append("\nSystem services:\n")
+        try {
+            @Suppress("UNCHECKED_CAST")
+            val names = Class.forName("android.os.ServiceManager").getMethod("listServices").invoke(null) as Array<String>
+            names.filter { n -> listOf("radio", "fm", "mcu", "car", "tw", "yt", "can").any { n.lowercase().contains(it) } }
+                .forEach { out.append("  $it\n") }
+        } catch (e: Throwable) { out.append("  (not readable)\n") }
+        out.append("\nKernel nodes:\n")
+        listOf("/dev/radio0", "/dev/fmradio", "/dev/tef6686", "/dev/si47xx", "/dev/mcu", "/dev/ttyS1", "/dev/ttyS3", "/dev/ttyS4")
+            .filter { File(it).exists() }.forEach { out.append("  $it\n") }
+        return out.toString()
+    }
+
     private fun speedTab() {
         content.addView(title("Speed up"))
 
@@ -1098,6 +1160,20 @@ class SettingsActivity : Activity() {
         })
         content.addView(result)
         content.addView(toggle("Free memory automatically when the launcher starts", "auto_free", false))
+
+        content.addView(label("Car radio info"))
+        content.addView(hint("Shows which radio system this unit uses, so a matching FM driver can be added. Take a photo of the result and send it."))
+        val radioInfo = TextView(this).apply {
+            typeface = Typeface.MONOSPACE
+            textSize = 13f
+            setTextColor(Color.WHITE)
+            setTextIsSelectable(true)
+        }
+        buttonRow(button("Check radio system") {
+            radioInfo.text = "Checking…"
+            Thread { val r = radioReport(); ui.post { radioInfo.text = r } }.start()
+        })
+        content.addView(radioInfo)
 
         content.addView(label("Default launcher"))
         val home = Apps.defaultHome(packageManager)

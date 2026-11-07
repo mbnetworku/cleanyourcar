@@ -218,7 +218,14 @@ class MusicService : Service() {
         try {
             @Suppress("DEPRECATION")
             mp.setAudioStreamType(AudioManager.STREAM_MUSIC)
-            mp.setDataSource(t.path)
+            if (t.isStream) mp.setDataSource(t.path)
+            else {
+                // Open the file in this app and hand over the open file: on newer Android the media server
+                // itself may not be allowed to read USB drives, even when this app is.
+                val f = java.io.File(t.path)
+                if (!f.canRead()) { skipBad(t, if (f.exists()) "no permission to read it. Allow \"All files access\" in Settings → Launcher → Permissions" else "the file is gone"); return }
+                java.io.FileInputStream(f).use { mp.setDataSource(it.fd) }
+            }
             AudioFx.attach(this, mp.audioSessionId)
             mp.setOnPreparedListener {
                 if (player !== it) return@setOnPreparedListener
@@ -230,23 +237,23 @@ class MusicService : Service() {
             mp.setOnCompletionListener {
                 if (repeat == 2) { it.seekTo(0); it.start() } else next()
             }
-            mp.setOnErrorListener { p, what, _ ->
+            mp.setOnErrorListener { p, what, extra ->
                 // -38 is "wrong state" noise, not a bad file.
-                if (p === player && what != -38) skipBad(t)
+                if (p === player && what != -38) skipBad(t, if (what == 1 && extra == -1010) "this format isn't supported" else "player error $what/$extra")
                 true
             }
             mp.prepareAsync()
         } catch (e: Exception) {
-            skipBad(t)
+            skipBad(t, e.javaClass.simpleName + (e.message?.let { ": $it" } ?: ""))
         }
         session.isActive = true
         changed()
     }
 
     /** A file this box cannot decode (or a missing one): say so and move on, without looping forever. */
-    private fun skipBad(t: Track) {
+    private fun skipBad(t: Track, why: String = "") {
         failures++
-        ui.post { Toast.makeText(this, "Can't play ${java.io.File(t.path).name} on this device — skipped", Toast.LENGTH_SHORT).show() }
+        ui.post { Toast.makeText(this, "Can't play ${java.io.File(t.path).name}" + (if (why.isNotEmpty()) ": $why" else ""), Toast.LENGTH_LONG).show() }
         if (failures < queue.size.coerceAtMost(8)) ui.postDelayed({ next() }, 300) else pause()
     }
 

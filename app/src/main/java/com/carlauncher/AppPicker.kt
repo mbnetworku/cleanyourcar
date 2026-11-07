@@ -283,7 +283,7 @@ object AppPicker {
         frame.alpha = 0f
         frame.animate().alpha(1f).setDuration(200).start()
         root.translationY = dm.heightPixels.toFloat()
-        root.animate().translationY(0f).setDuration(320).setInterpolator(android.view.animation.DecelerateInterpolator(1.6f)).start()
+        root.animate().translationY(0f).setDuration(220).setInterpolator(android.view.animation.DecelerateInterpolator(1.6f)).start()
         dlg.setContentView(frame)
         dlg.window?.setSoftInputMode(android.view.WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
         dlg.show()

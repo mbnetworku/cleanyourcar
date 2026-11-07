@@ -204,7 +204,7 @@ class EqualizerActivity : Activity() {
         listOf(left, mid, right).forEachIndexed { i, v ->
             v.alpha = 0f
             v.translationY = px(40).toFloat()
-            v.animate().alpha(1f).translationY(0f).setStartDelay(60L * i).setDuration(320).setInterpolator(DecelerateInterpolator()).start()
+            v.animate().alpha(1f).translationY(0f).setStartDelay(30L * i).setDuration(180).setInterpolator(DecelerateInterpolator()).start()
         }
     }
 

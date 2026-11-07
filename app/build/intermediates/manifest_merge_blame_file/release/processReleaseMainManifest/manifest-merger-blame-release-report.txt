@@ -20,360 +20,379 @@
 14    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 14-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:8:5-83
 14-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:8:22-80
-15    <uses-permission
-15-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:9:5-108
-16        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-16-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:9:22-78
-17        android:maxSdkVersion="28" />
-17-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:9:79-105
-18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:10:5-79
-18-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:10:22-76
-19    <uses-permission
-19-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:11:5-13:38
-20        android:name="android.permission.READ_EXTERNAL_STORAGE"
-20-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:12:9-64
-21        android:maxSdkVersion="32" />
-21-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:13:9-35
-22    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-22-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:14:5-75
-22-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:14:22-72
-23    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+15    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+15-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:9:5-111
+15-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:9:22-79
+16    <uses-permission
+16-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:10:5-108
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:10:22-78
+18        android:maxSdkVersion="28" />
+18-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:10:79-105
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:11:5-79
+19-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:11:22-76
+20    <uses-permission
+20-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:12:5-14:38
+21        android:name="android.permission.READ_EXTERNAL_STORAGE"
+21-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:13:9-64
+22        android:maxSdkVersion="32" />
+22-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:14:9-35
+23    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
 23-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:15:5-75
 23-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:15:22-72
-24    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-24-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:16:5-80
-24-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:16:22-77
-25    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-25-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:17:5-77
-25-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:17:22-74
-26    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
-26-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:18:5-92
-26-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:18:22-89
-27    <uses-permission android:name="android.permission.WAKE_LOCK" />
-27-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:19:5-68
-27-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:19:22-65
-28    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-28-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:20:5-81
-28-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:20:22-78
-29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-29-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:21:5-76
-29-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:21:22-73
-30    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-30-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:22:5-76
-30-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:22:22-73
-31    <uses-permission android:name="android.permission.BLUETOOTH" />
-31-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:23:5-68
-31-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:23:22-65
-32    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-32-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:24:5-74
-32-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:24:22-71
-33    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+24    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+24-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:16:5-75
+24-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:16:22-72
+25    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+25-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:17:5-76
+25-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:17:22-73
+26    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+26-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:18:5-77
+26-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:18:22-74
+27    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+27-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:19:5-80
+27-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:19:22-77
+28    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+28-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:20:5-77
+28-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:20:22-74
+29    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+29-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:21:5-92
+29-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:21:22-89
+30    <uses-permission android:name="android.permission.WAKE_LOCK" />
+30-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:22:5-68
+30-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:22:22-65
+31    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+31-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:23:5-81
+31-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:23:22-78
+32    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+32-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:24:5-76
+32-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:24:22-73
+33    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 33-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:25:5-76
 33-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:25:22-73
-34    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-34-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:26:5-73
-34-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:26:22-70
-35    <!-- Only usable after a one-time "adb shell pm grant"; lets Settings turn system animations off. -->
-36    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
-36-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:28:5-30:47
-36-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:29:9-64
-37
-38    <queries>
-38-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:32:5-45:15
-39        <intent>
-39-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:33:9-36:18
-40            <action android:name="android.intent.action.MAIN" />
-40-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-40-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-41
-42            <category android:name="android.intent.category.LAUNCHER" />
-42-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-42-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-43        </intent>
-44        <intent>
-44-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:9-40:18
-45            <action android:name="android.intent.action.MAIN" />
-45-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-45-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-46
-47            <category android:name="android.intent.category.HOME" />
-47-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:39:13-69
-47-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:39:23-66
-48        </intent>
-49        <intent>
-49-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:41:9-44:18
-50            <action android:name="android.intent.action.VIEW" />
-50-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:42:13-65
-50-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:42:21-62
-51
-52            <data android:scheme="geo" />
-52-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:43:13-42
-52-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:43:19-39
-53        </intent>
-54    </queries>
-55
-56    <application
-56-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:47:5-182:19
-57        android:allowBackup="false"
-57-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:48:9-36
-58        android:extractNativeLibs="true"
-59        android:hardwareAccelerated="true"
-59-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:49:9-43
-60        android:icon="@drawable/ic_launcher"
-60-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:50:9-45
-61        android:label="@string/app_name"
-61-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:51:9-41
-62        android:theme="@style/AppTheme" >
-62-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:52:9-40
-63        <activity
-63-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:54:9-67:20
-64            android:name="com.carlauncher.MainActivity"
-64-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:55:13-41
-65            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-65-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:60:13-174
-66            android:exported="true"
-66-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:56:13-36
-67            android:launchMode="singleTask"
-67-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:57:13-44
-68            android:screenOrientation="sensorLandscape"
-68-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:58:13-56
-69            android:stateNotNeeded="true" >
-69-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:59:13-42
-70            <intent-filter>
-70-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:61:13-66:29
-71                <action android:name="android.intent.action.MAIN" />
-71-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-71-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-72
-73                <category android:name="android.intent.category.HOME" />
-73-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:39:13-69
-73-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:39:23-66
-74                <category android:name="android.intent.category.DEFAULT" />
-74-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:64:17-76
-74-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:64:27-73
-75                <category android:name="android.intent.category.LAUNCHER" />
-75-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-75-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-76            </intent-filter>
-77        </activity>
-78        <activity
-78-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:69:9-73:177
-79            android:name="com.carlauncher.SettingsActivity"
-79-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:70:13-45
-80            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-80-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:73:13-174
-81            android:exported="false"
-81-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:71:13-37
-82            android:screenOrientation="sensorLandscape" />
-82-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:72:13-56
-83        <activity
-83-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:75:9-89:20
-84            android:name="com.carlauncher.MusicActivity"
-84-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:76:13-42
-85            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-85-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:83:13-174
-86            android:exported="true"
-86-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:77:13-36
-87            android:icon="@drawable/ic_music"
-87-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:78:13-46
-88            android:label="Music"
-88-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:79:13-34
-89            android:launchMode="singleTask"
-89-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:80:13-44
-90            android:screenOrientation="sensorLandscape"
-90-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:81:13-56
-91            android:taskAffinity="com.carlauncher.music" >
-91-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:82:13-57
-92            <intent-filter>
-92-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:84:13-88:29
-93                <action android:name="android.intent.action.MAIN" />
-93-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-93-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-94
-95                <category android:name="android.intent.category.LAUNCHER" />
-95-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-95-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-96                <category android:name="android.intent.category.APP_MUSIC" />
-96-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:87:17-78
-96-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:87:27-75
-97            </intent-filter>
-98        </activity>
-99        <activity
-99-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:91:9-103:20
-100            android:name="com.carlauncher.EqualizerActivity"
-100-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:92:13-46
-101            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-101-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:98:13-174
-102            android:exported="true"
-102-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:93:13-36
-103            android:icon="@drawable/ic_eq"
-103-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:94:13-43
-104            android:label="Equalizer"
-104-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:95:13-38
-105            android:screenOrientation="sensorLandscape"
-105-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:96:13-56
-106            android:taskAffinity="com.carlauncher.eq" >
-106-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:97:13-54
-107            <intent-filter>
-107-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:99:13-102:29
-108                <action android:name="android.intent.action.MAIN" />
-108-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-108-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-109
-110                <category android:name="android.intent.category.LAUNCHER" />
-110-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-110-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-111            </intent-filter>
-112        </activity>
-113        <activity
-113-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:105:9-118:20
-114            android:name="com.carlauncher.VideoActivity"
-114-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:106:13-42
-115            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-115-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:113:13-174
-116            android:exported="true"
-116-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:107:13-36
-117            android:icon="@drawable/ic_video"
-117-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:108:13-46
-118            android:label="Videos"
-118-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:109:13-35
-119            android:launchMode="singleTask"
-119-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:110:13-44
-120            android:screenOrientation="sensorLandscape"
-120-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:111:13-56
-121            android:taskAffinity="com.carlauncher.video" >
-121-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:112:13-57
-122            <intent-filter>
-122-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:99:13-102:29
-123                <action android:name="android.intent.action.MAIN" />
-123-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-123-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-124
-125                <category android:name="android.intent.category.LAUNCHER" />
-125-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-125-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-126            </intent-filter>
-127        </activity>
-128        <activity
-128-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:120:9-134:20
-129            android:name="com.carlauncher.RadioActivity"
-129-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:121:13-42
-130            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-130-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:129:13-174
-131            android:exported="true"
-131-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:122:13-36
-132            android:icon="@drawable/ic_radio"
-132-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:123:13-46
-133            android:label="Radio"
-133-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:124:13-34
-134            android:launchMode="singleTask"
-134-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:125:13-44
-135            android:screenOrientation="sensorLandscape"
-135-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:126:13-56
-136            android:taskAffinity="com.carlauncher.radio"
-136-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:127:13-57
-137            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
-137-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:128:13-70
-138            <intent-filter>
-138-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:99:13-102:29
-139                <action android:name="android.intent.action.MAIN" />
-139-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-139-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-140
-141                <category android:name="android.intent.category.LAUNCHER" />
-141-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-141-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-142            </intent-filter>
-143        </activity>
-144        <activity
-144-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:136:9-150:20
-145            android:name="com.carlauncher.BluetoothActivity"
-145-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:137:13-46
-146            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-146-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:145:13-174
-147            android:exported="true"
-147-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:138:13-36
-148            android:icon="@drawable/ic_bt"
-148-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:139:13-43
-149            android:label="Bluetooth"
-149-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:140:13-38
-150            android:launchMode="singleTask"
-150-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:141:13-44
-151            android:screenOrientation="sensorLandscape"
-151-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:142:13-56
-152            android:taskAffinity="com.carlauncher.bt"
-152-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:143:13-54
-153            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
-153-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:144:13-70
-154            <intent-filter>
-154-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:99:13-102:29
-155                <action android:name="android.intent.action.MAIN" />
-155-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-155-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-156
-157                <category android:name="android.intent.category.LAUNCHER" />
-157-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-157-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-158            </intent-filter>
-159        </activity>
-160        <activity
-160-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:152:9-166:20
-161            android:name="com.carlauncher.FilesActivity"
-161-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:153:13-42
-162            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
-162-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:161:13-174
-163            android:exported="true"
-163-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:154:13-36
-164            android:icon="@drawable/ic_files"
-164-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:155:13-46
-165            android:label="Files"
-165-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:156:13-34
-166            android:launchMode="singleTask"
-166-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:157:13-44
-167            android:screenOrientation="sensorLandscape"
-167-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:158:13-56
-168            android:taskAffinity="com.carlauncher.files"
-168-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:159:13-57
-169            android:windowSoftInputMode="stateAlwaysHidden" >
-169-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:160:13-60
-170            <intent-filter>
-170-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:99:13-102:29
-171                <action android:name="android.intent.action.MAIN" />
-171-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:13-65
-171-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:34:21-62
-172
-173                <category android:name="android.intent.category.LAUNCHER" />
-173-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:13-73
-173-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:23-70
-174            </intent-filter>
-175        </activity>
-176
-177        <service
-177-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:168:9-171:61
-178            android:name="com.carlauncher.MusicService"
-178-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:169:13-41
-179            android:exported="false"
-179-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:170:13-37
-180            android:foregroundServiceType="mediaPlayback" />
-180-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:171:13-58
-181        <service
-181-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:173:9-181:19
-182            android:name="com.carlauncher.NowPlayingService"
-182-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:174:13-46
-183            android:exported="true"
-183-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:175:13-36
-184            android:label="@string/app_name"
-184-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:176:13-45
-185            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
-185-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:177:13-87
-186            <intent-filter>
-186-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:178:13-180:29
-187                <action android:name="android.service.notification.NotificationListenerService" />
-187-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:179:17-99
-187-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:179:25-96
-188            </intent-filter>
-189        </service>
-190    </application>
-191
-192</manifest>
+34    <uses-permission android:name="android.permission.BLUETOOTH" />
+34-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:26:5-68
+34-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:26:22-65
+35    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+35-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:27:5-74
+35-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:27:22-71
+36    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+36-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:28:5-76
+36-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:28:22-73
+37    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+37-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:29:5-73
+37-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:29:22-70
+38    <!-- Only usable after a one-time "adb shell pm grant"; lets Settings turn system animations off. -->
+39    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+39-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:31:5-33:47
+39-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:32:9-64
+40
+41    <queries>
+41-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:35:5-48:15
+42        <intent>
+42-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:36:9-39:18
+43            <action android:name="android.intent.action.MAIN" />
+43-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+43-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+44
+45            <category android:name="android.intent.category.LAUNCHER" />
+45-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+45-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+46        </intent>
+47        <intent>
+47-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:40:9-43:18
+48            <action android:name="android.intent.action.MAIN" />
+48-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+48-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+49
+50            <category android:name="android.intent.category.HOME" />
+50-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:42:13-69
+50-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:42:23-66
+51        </intent>
+52        <intent>
+52-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:44:9-47:18
+53            <action android:name="android.intent.action.VIEW" />
+53-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:45:13-65
+53-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:45:21-62
+54
+55            <data android:scheme="geo" />
+55-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:46:13-42
+55-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:46:19-39
+56        </intent>
+57    </queries>
+58
+59    <application
+59-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:50:5-191:19
+60        android:allowBackup="false"
+60-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:51:9-36
+61        android:extractNativeLibs="true"
+62        android:hardwareAccelerated="true"
+62-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:52:9-43
+63        android:icon="@drawable/ic_launcher"
+63-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:53:9-45
+64        android:label="@string/app_name"
+64-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:54:9-41
+65        android:theme="@style/AppTheme" >
+65-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:55:9-40
+66        <activity
+66-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:57:9-70:20
+67            android:name="com.carlauncher.MainActivity"
+67-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:58:13-41
+68            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+68-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:63:13-174
+69            android:exported="true"
+69-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:59:13-36
+70            android:launchMode="singleTask"
+70-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:60:13-44
+71            android:screenOrientation="sensorLandscape"
+71-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:61:13-56
+72            android:stateNotNeeded="true" >
+72-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:62:13-42
+73            <intent-filter>
+73-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:64:13-69:29
+74                <action android:name="android.intent.action.MAIN" />
+74-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+74-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+75
+76                <category android:name="android.intent.category.HOME" />
+76-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:42:13-69
+76-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:42:23-66
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:67:17-76
+77-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:67:27-73
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+78-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:72:9-76:177
+82            android:name="com.carlauncher.SettingsActivity"
+82-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:73:13-45
+83            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+83-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:76:13-174
+84            android:exported="false"
+84-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:74:13-37
+85            android:screenOrientation="sensorLandscape" />
+85-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:75:13-56
+86        <activity
+86-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:78:9-92:20
+87            android:name="com.carlauncher.MusicActivity"
+87-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:79:13-42
+88            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+88-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:86:13-174
+89            android:exported="true"
+89-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:80:13-36
+90            android:icon="@drawable/ic_music"
+90-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:81:13-46
+91            android:label="Music"
+91-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:82:13-34
+92            android:launchMode="singleTask"
+92-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:83:13-44
+93            android:screenOrientation="sensorLandscape"
+93-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:84:13-56
+94            android:taskAffinity="com.carlauncher.music" >
+94-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:85:13-57
+95            <intent-filter>
+95-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:87:13-91:29
+96                <action android:name="android.intent.action.MAIN" />
+96-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+96-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+97
+98                <category android:name="android.intent.category.LAUNCHER" />
+98-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+98-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+99                <category android:name="android.intent.category.APP_MUSIC" />
+99-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:90:17-78
+99-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:90:27-75
+100            </intent-filter>
+101        </activity>
+102        <activity
+102-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:94:9-106:20
+103            android:name="com.carlauncher.EqualizerActivity"
+103-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:95:13-46
+104            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+104-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:101:13-174
+105            android:exported="true"
+105-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:96:13-36
+106            android:icon="@drawable/ic_eq"
+106-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:97:13-43
+107            android:label="Equalizer"
+107-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:98:13-38
+108            android:screenOrientation="sensorLandscape"
+108-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:99:13-56
+109            android:taskAffinity="com.carlauncher.eq" >
+109-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:100:13-54
+110            <intent-filter>
+110-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:102:13-105:29
+111                <action android:name="android.intent.action.MAIN" />
+111-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+111-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+112
+113                <category android:name="android.intent.category.LAUNCHER" />
+113-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+113-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+114            </intent-filter>
+115        </activity>
+116        <activity
+116-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:108:9-121:20
+117            android:name="com.carlauncher.VideoActivity"
+117-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:109:13-42
+118            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+118-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:116:13-174
+119            android:exported="true"
+119-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:110:13-36
+120            android:icon="@drawable/ic_video"
+120-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:111:13-46
+121            android:label="Videos"
+121-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:112:13-35
+122            android:launchMode="singleTask"
+122-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:113:13-44
+123            android:screenOrientation="sensorLandscape"
+123-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:114:13-56
+124            android:taskAffinity="com.carlauncher.video" >
+124-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:115:13-57
+125            <intent-filter>
+125-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:102:13-105:29
+126                <action android:name="android.intent.action.MAIN" />
+126-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+126-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+127
+128                <category android:name="android.intent.category.LAUNCHER" />
+128-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+128-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+129            </intent-filter>
+130        </activity>
+131        <activity
+131-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:123:9-137:20
+132            android:name="com.carlauncher.RadioActivity"
+132-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:124:13-42
+133            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+133-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:132:13-174
+134            android:exported="true"
+134-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:125:13-36
+135            android:icon="@drawable/ic_radio"
+135-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:126:13-46
+136            android:label="Radio"
+136-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:127:13-34
+137            android:launchMode="singleTask"
+137-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:128:13-44
+138            android:screenOrientation="sensorLandscape"
+138-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:129:13-56
+139            android:taskAffinity="com.carlauncher.radio"
+139-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:130:13-57
+140            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
+140-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:131:13-70
+141            <intent-filter>
+141-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:102:13-105:29
+142                <action android:name="android.intent.action.MAIN" />
+142-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+142-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+143
+144                <category android:name="android.intent.category.LAUNCHER" />
+144-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+144-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+145            </intent-filter>
+146        </activity>
+147        <activity
+147-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:139:9-153:20
+148            android:name="com.carlauncher.BluetoothActivity"
+148-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:140:13-46
+149            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+149-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:148:13-174
+150            android:exported="true"
+150-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:141:13-36
+151            android:icon="@drawable/ic_bt"
+151-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:142:13-43
+152            android:label="Bluetooth"
+152-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:143:13-38
+153            android:launchMode="singleTask"
+153-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:144:13-44
+154            android:screenOrientation="sensorLandscape"
+154-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:145:13-56
+155            android:taskAffinity="com.carlauncher.bt"
+155-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:146:13-54
+156            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
+156-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:147:13-70
+157            <intent-filter>
+157-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:102:13-105:29
+158                <action android:name="android.intent.action.MAIN" />
+158-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+158-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+159
+160                <category android:name="android.intent.category.LAUNCHER" />
+160-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+160-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+161            </intent-filter>
+162        </activity>
+163        <activity
+163-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:155:9-169:20
+164            android:name="com.carlauncher.FilesActivity"
+164-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:156:13-42
+165            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+165-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:164:13-174
+166            android:exported="true"
+166-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:157:13-36
+167            android:icon="@drawable/ic_files"
+167-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:158:13-46
+168            android:label="Files"
+168-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:159:13-34
+169            android:launchMode="singleTask"
+169-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:160:13-44
+170            android:screenOrientation="sensorLandscape"
+170-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:161:13-56
+171            android:taskAffinity="com.carlauncher.files"
+171-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:162:13-57
+172            android:windowSoftInputMode="stateAlwaysHidden" >
+172-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:163:13-60
+173            <intent-filter>
+173-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:102:13-105:29
+174                <action android:name="android.intent.action.MAIN" />
+174-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:13-65
+174-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:37:21-62
+175
+176                <category android:name="android.intent.category.LAUNCHER" />
+176-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:13-73
+176-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:38:23-70
+177            </intent-filter>
+178        </activity>
+179        <activity
+179-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:171:9-175:177
+180            android:name="com.carlauncher.PermissionsActivity"
+180-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:172:13-48
+181            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|density|fontScale|uiMode|smallestScreenSize|screenLayout|locale|layoutDirection"
+181-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:175:13-174
+182            android:exported="false"
+182-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:173:13-37
+183            android:screenOrientation="sensorLandscape" />
+183-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:174:13-56
+184
+185        <service
+185-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:177:9-180:61
+186            android:name="com.carlauncher.MusicService"
+186-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:178:13-41
+187            android:exported="false"
+187-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:179:13-37
+188            android:foregroundServiceType="mediaPlayback" />
+188-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:180:13-58
+189        <service
+189-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:182:9-190:19
+190            android:name="com.carlauncher.NowPlayingService"
+190-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:183:13-46
+191            android:exported="true"
+191-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:184:13-36
+192            android:label="@string/app_name"
+192-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:185:13-45
+193            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+193-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:186:13-87
+194            <intent-filter>
+194-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:187:13-189:29
+195                <action android:name="android.service.notification.NotificationListenerService" />
+195-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:188:17-99
+195-->D:\Android\re2\CarLauncher\app\src\main\AndroidManifest.xml:188:25-96
+196            </intent-filter>
+197        </service>
+198    </application>
+199
+200</manifest>

@@ -14,11 +14,14 @@ com.carlauncher.EqView:
     public void <init>(android.content.Context)
 com.carlauncher.MainActivity:
     private final void openListenerSettings()
+com.carlauncher.MusicActivity:
+    private final void askPermission()
 com.carlauncher.MusicService:
     private static final java.lang.String CHANNEL
     private static final int NOTE_ID
     public final int getIndex()
     public final java.util.List getQueue()
+    static synthetic void skipBad$default(com.carlauncher.MusicService,com.carlauncher.Track,java.lang.String,int,java.lang.Object)
 com.carlauncher.NoTuner:
     public void mute(boolean)
 com.carlauncher.R$drawable:
@@ -236,7 +239,6 @@ kotlin.collections.AbstractCollection:
     public abstract java.util.Iterator iterator()
 kotlin.collections.AbstractList$Companion:
     public final void checkBoundsIndexes$kotlin_stdlib(int,int,int)
-    public final int newCapacity$kotlin_stdlib(int,int)
 kotlin.collections.AbstractList:
     private static final int maxArraySize
     public abstract int getSize()
@@ -248,7 +250,9 @@ kotlin.collections.AbstractMap$values$1$iterator$1
 kotlin.collections.AbstractMap$values$1
 kotlin.collections.AbstractMap
 kotlin.collections.AbstractMutableCollection
-kotlin.collections.AbstractMutableList
+kotlin.collections.AbstractMutableList:
+    public abstract void add(int,java.lang.Object)
+    public abstract java.lang.Object set(int,java.lang.Object)
 kotlin.collections.AbstractMutableMap
 kotlin.collections.AbstractMutableSet
 kotlin.collections.AbstractSet$Companion
@@ -264,7 +268,6 @@ kotlin.collections.ArraysKt__ArraysJVMKt:
     public void <init>()
     public static final java.lang.Object[] arrayOfNulls(java.lang.Object[],int)
     public static final int contentDeepHashCode(java.lang.Object[])
-    public static final void copyOfRangeToIndexCheck(int,int)
     public static final synthetic java.lang.Object[] orEmpty(java.lang.Object[])
     private static final java.lang.String toString(byte[],java.nio.charset.Charset)
     public static final synthetic java.lang.Object[] toTypedArray(java.util.Collection)
@@ -352,7 +355,6 @@ kotlin.collections.ArraysKt___ArraysJvmKt:
     public static final float[] copyInto(float[],float[],int,int,int)
     public static final int[] copyInto(int[],int[],int,int,int)
     public static final long[] copyInto(long[],long[],int,int,int)
-    public static final java.lang.Object[] copyInto(java.lang.Object[],java.lang.Object[],int,int,int)
     public static final short[] copyInto(short[],short[],int,int,int)
     public static final boolean[] copyInto(boolean[],boolean[],int,int,int)
     public static synthetic byte[] copyInto$default(byte[],byte[],int,int,int,int,java.lang.Object)
@@ -388,7 +390,6 @@ kotlin.collections.ArraysKt___ArraysJvmKt:
     public static final float[] copyOfRange(float[],int,int)
     public static final int[] copyOfRange(int[],int,int)
     public static final long[] copyOfRange(long[],int,int)
-    public static final java.lang.Object[] copyOfRange(java.lang.Object[],int,int)
     public static final short[] copyOfRange(short[],int,int)
     public static final boolean[] copyOfRange(boolean[],int,int)
     private static final byte[] copyOfRangeInline(byte[],int,int)
@@ -526,7 +527,6 @@ kotlin.collections.ArraysKt___ArraysJvmKt:
     public static final void sort(long[],int,int)
     private static final void sort(java.lang.Comparable[])
     public static final void sort(java.lang.Comparable[],int,int)
-    public static final void sort(java.lang.Object[])
     public static final void sort(java.lang.Object[],int,int)
     public static final void sort(short[])
     public static final void sort(short[],int,int)
@@ -2247,14 +2247,12 @@ kotlin.collections.CollectionsKt:
     private void <init>()
 kotlin.collections.CollectionsKt__CollectionsJVMKt:
     public void <init>()
-    public static final java.util.List build(java.util.List)
     private static final java.util.List buildListInternal(int,kotlin.jvm.functions.Function1)
     private static final java.util.List buildListInternal(kotlin.jvm.functions.Function1)
     private static final int checkCountOverflow(int)
     private static final int checkIndexOverflow(int)
     private static final java.lang.Object[] collectionToArray(java.util.Collection)
     private static final java.lang.Object[] collectionToArray(java.util.Collection,java.lang.Object[])
-    public static final java.util.List createListBuilder()
     public static final java.util.List createListBuilder(int)
     public static final java.util.List shuffled(java.lang.Iterable,java.util.Random)
     private static final java.util.List toList(java.util.Enumeration)
@@ -2311,7 +2309,6 @@ kotlin.collections.CollectionsKt__MutableCollectionsJVMKt:
     private static final void fill(java.util.List,java.lang.Object)
     private static final void shuffle(java.util.List)
     private static final void shuffle(java.util.List,java.util.Random)
-    public static final void sort(java.util.List)
     private static final void sort(java.util.List,java.util.Comparator)
     private static final void sort(java.util.List,kotlin.jvm.functions.Function2)
 kotlin.collections.CollectionsKt__MutableCollectionsKt:
@@ -2563,7 +2560,6 @@ kotlin.collections.CollectionsKt___CollectionsKt:
     public static final void sortBy(java.util.List,kotlin.jvm.functions.Function1)
     public static final void sortByDescending(java.util.List,kotlin.jvm.functions.Function1)
     public static final void sortDescending(java.util.List)
-    public static final java.util.List sorted(java.lang.Iterable)
     public static final java.util.List sortedBy(java.lang.Iterable,kotlin.jvm.functions.Function1)
     public static final java.util.List sortedByDescending(java.lang.Iterable,kotlin.jvm.functions.Function1)
     public static final java.util.List sortedDescending(java.lang.Iterable)
@@ -2844,10 +2840,8 @@ kotlin.collections.UArraySortingKt
 kotlin.collections.UCollectionsKt
 kotlin.collections.UCollectionsKt___UCollectionsKt
 kotlin.collections.builders.AbstractMapBuilderEntrySet
-kotlin.collections.builders.ListBuilder$Companion
-kotlin.collections.builders.ListBuilder$Itr
-kotlin.collections.builders.ListBuilder
-kotlin.collections.builders.ListBuilderKt
+kotlin.collections.builders.ListBuilder:
+    private final java.lang.Object writeReplace()
 kotlin.collections.builders.MapBuilder$Companion
 kotlin.collections.builders.MapBuilder$EntriesItr
 kotlin.collections.builders.MapBuilder$EntryRef
@@ -4654,10 +4648,7 @@ kotlin.text.StringsKt__StringsKt:
     public static final java.util.List lines(java.lang.CharSequence)
     private static final boolean matches(java.lang.CharSequence,kotlin.text.Regex)
     private static final java.lang.String orEmpty(java.lang.String)
-    public static final java.lang.CharSequence padEnd(java.lang.CharSequence,int,char)
-    public static final java.lang.String padEnd(java.lang.String,int,char)
     public static synthetic java.lang.CharSequence padEnd$default(java.lang.CharSequence,int,char,int,java.lang.Object)
-    public static synthetic java.lang.String padEnd$default(java.lang.String,int,char,int,java.lang.Object)
     public static final java.lang.CharSequence padStart(java.lang.CharSequence,int,char)
     public static final java.lang.String padStart(java.lang.String,int,char)
     public static synthetic java.lang.CharSequence padStart$default(java.lang.CharSequence,int,char,int,java.lang.Object)
@@ -5058,15 +5049,19 @@ com.carlauncher.BandSlider:
 com.carlauncher.BluetoothActivity$Companion
 com.carlauncher.BluetoothActivity$build$3:
     public final void invoke()
+com.carlauncher.BluetoothActivity$carBtButton$1:
+    public final void invoke()
 com.carlauncher.BluetoothActivity$devicesTab$1:
     public final void invoke()
 com.carlauncher.BluetoothActivity$devicesTab$2:
     public final void invoke()
-com.carlauncher.BluetoothActivity$devicesTab$4:
+com.carlauncher.BluetoothActivity$devicesTab$3:
     public final void invoke()
-com.carlauncher.BluetoothActivity$devicesTab$6:
+com.carlauncher.BluetoothActivity$devicesTab$5:
     public final void invoke()
 com.carlauncher.BluetoothActivity$devicesTab$7:
+    public final void invoke()
+com.carlauncher.BluetoothActivity$devicesTab$8:
     public final void invoke()
 com.carlauncher.BluetoothActivity$musicTab$3:
     public final void invoke()
@@ -5108,6 +5103,7 @@ com.carlauncher.BluetoothActivity:
     public static boolean getPhoneMusicSupported()
     public static void key()
     public static void musicTab()
+    public static boolean needsBtPermission()
     public static void phoneTab()
     public final android.graphics.drawable.GradientDrawable pill(boolean,int,int)
     public static void settingsTab()
@@ -5276,7 +5272,6 @@ com.carlauncher.MusicActivity$playPause$1:
 com.carlauncher.MusicActivity$playerListener$1:
     public final void invoke()
 com.carlauncher.MusicActivity:
-    public static void askPermission()
     public static void buildUi()
     public static void onRow()
     public static void playPause()
@@ -5333,12 +5328,56 @@ com.carlauncher.NowPlaying:
     public final void refresh()
     public final void stop()
     public static void toggle()
+com.carlauncher.PermissionsActivity$Companion:
+    public static boolean missing()
+com.carlauncher.PermissionsActivity$Need:
+    public static kotlin.jvm.functions.Function0 getGranted()
+    public static kotlin.jvm.functions.Function0 getRequest()
+    public static java.lang.String getTitle()
+    public static java.lang.String getWhy()
+com.carlauncher.PermissionsActivity$buildNeeds$1$10:
+    public final void invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$11:
+    public final java.lang.Boolean invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$12:
+    public final void invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$1:
+    public final java.lang.Boolean invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$2:
+    public final void invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$3:
+    public final java.lang.Boolean invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$4:
+    public final void invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$5:
+    public final java.lang.Boolean invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$6:
+    public final void invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$7:
+    public final java.lang.Boolean invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$8:
+    public final void invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$9$1:
+    public final void invoke()
+com.carlauncher.PermissionsActivity$buildNeeds$1$9:
+    public final java.lang.Boolean invoke()
+com.carlauncher.PermissionsActivity:
+    public static final com.carlauncher.PermissionsActivity$Companion Companion
+    static void <clinit>()
+    public static varargs void ask()
+    public static void build()
+    public static java.util.List buildNeeds()
+    public final void finishSetup()
+    public static void openAppPage()
+    public final android.graphics.drawable.GradientDrawable pill(int,int)
+    public static android.graphics.drawable.GradientDrawable pill$default(com.carlauncher.PermissionsActivity,int)
+    public final android.widget.LinearLayout ui()
 com.carlauncher.R$drawable
 com.carlauncher.R$id
 com.carlauncher.R$layout
 com.carlauncher.R$style
 com.carlauncher.RadioActivity$$InternalSyntheticLambda$3$a6574fb2a750854ebe05f6495a3d442c3518f12b56436497e9ea83f631d8b8af$0
-com.carlauncher.RadioActivity$$InternalSyntheticLambda$4$faf3e2ef4e12ca524a93b914d9c2c99daa6ffafc7947f326542ec15c0addf3c7$0
+com.carlauncher.RadioActivity$$InternalSyntheticLambda$4$619c99e28f2c2b24f9b35e0abdca0d6d2d733e91027ca9accdde598c10ea9da3$0
 com.carlauncher.RadioActivity$build$11:
     public final void invoke()
 com.carlauncher.RadioActivity$build$12:
@@ -5354,6 +5393,8 @@ com.carlauncher.RadioActivity$build$17:
 com.carlauncher.RadioActivity$build$18:
     public final void invoke()
 com.carlauncher.RadioActivity$build$1:
+    public final void invoke()
+com.carlauncher.RadioActivity$build$20$1:
     public final void invoke()
 com.carlauncher.RadioActivity$build$3:
     public final void invoke()
@@ -5375,6 +5416,7 @@ com.carlauncher.RadioActivity:
     public boolean tunerOk
     public final android.os.Handler ui
     public static void build()
+    public static kotlin.Pair carRadioApp()
     public static void searchAll()
     public static void seek()
     public static int snap()
@@ -5426,6 +5468,8 @@ com.carlauncher.SettingsActivity$launcherTab$3:
     public final void invoke$5()
 com.carlauncher.SettingsActivity$launcherTab$5:
     public final void invoke()
+com.carlauncher.SettingsActivity$launcherTab$6:
+    public final void invoke()
 com.carlauncher.SettingsActivity$launcherTab$modeButton$1:
     public final void invoke()
 com.carlauncher.SettingsActivity$onCreate$10:
@@ -5440,19 +5484,21 @@ com.carlauncher.SettingsActivity$refreshBt$2:
     public final void invoke()
 com.carlauncher.SettingsActivity$refreshWifi$1:
     public final void invoke()
-com.carlauncher.SettingsActivity$speedTab$11:
+com.carlauncher.SettingsActivity$speedTab$10:
     public final void invoke()
-com.carlauncher.SettingsActivity$speedTab$14:
+com.carlauncher.SettingsActivity$speedTab$12:
     public final void invoke()
 com.carlauncher.SettingsActivity$speedTab$15:
+    public final void invoke()
+com.carlauncher.SettingsActivity$speedTab$16:
     public final void invoke()
 com.carlauncher.SettingsActivity$speedTab$1:
     public final void invoke()
 com.carlauncher.SettingsActivity$speedTab$2:
     public final void invoke()
-com.carlauncher.SettingsActivity$speedTab$7:
+com.carlauncher.SettingsActivity$speedTab$3:
     public final void invoke()
-com.carlauncher.SettingsActivity$speedTab$9:
+com.carlauncher.SettingsActivity$speedTab$8:
     public final void invoke()
 com.carlauncher.SettingsActivity$wallpaperTab$4:
     public final java.lang.Integer invoke()
@@ -5492,15 +5538,19 @@ com.carlauncher.SettingsActivity:
     public static void driveTab()
     public static void hotspotTab()
     public static boolean isEnabled()
-    public static void launcherTab()
     public static void makeDefault()
     public static void pickPhoto()
     public static android.widget.Switch quickSwitch()
+    public static java.lang.String radioReport()
     public static void setAnimations()
     public static void setAppEnabled()
     public static void speedTab()
     public static void wallpaperTab()
     public static void wifiTab()
+com.carlauncher.Storage:
+    public static final com.carlauncher.Storage INSTANCE
+    static void <clinit>()
+    public static boolean hasAccess(android.app.Activity)
 com.carlauncher.Themes:
     public static final com.carlauncher.Themes INSTANCE
     public static java.lang.String backgroundKey()
@@ -5509,7 +5559,6 @@ com.carlauncher.Themes:
     public static int[][] getBackgrounds()
     public static int[] getCarColors()
     public static boolean getDark()
-    public static java.io.File photoFile(android.content.Context)
     public static android.graphics.drawable.GradientDrawable ring()
     public static android.graphics.drawable.GradientDrawable swatch()
     public static android.graphics.drawable.GradientDrawable swatchGradient()
@@ -5523,7 +5572,7 @@ com.carlauncher.Track:
     public static java.lang.String getPath()
     public static java.lang.String getSource()
     public static java.lang.String getTitle()
-    public static boolean isStream()
+    public final boolean isStream()
 com.carlauncher.Tuner$Companion:
     public static com.carlauncher.Tuner detect()
     public static java.lang.String hardwareNode()
@@ -5607,20 +5656,27 @@ kotlin.collections.AbstractIterator:
     public abstract void done()
     public final void setNext(java.lang.Object)
     public abstract boolean tryToComputeNext()
-kotlin.collections.AbstractList$Companion
+kotlin.collections.AbstractList$Companion:
+    public static void checkElementIndex$kotlin_stdlib()
+    public static void checkPositionIndex$kotlin_stdlib()
+    public static int newCapacity$kotlin_stdlib()
+    public static boolean orderedEquals$kotlin_stdlib()
+    public static int orderedHashCode$kotlin_stdlib()
 kotlin.collections.AbstractList$IteratorImpl:
     public static int getIndex()
     public static void setIndex()
 kotlin.collections.AbstractList:
     public static final kotlin.collections.AbstractList$Companion Companion
     static void <clinit>()
+kotlin.collections.AbstractMutableList:
+    public abstract int getSize()
+    public abstract java.lang.Object removeAt()
 kotlin.collections.ArrayAsCollection:
     public final boolean isVarargs
     public final int getSize()
 kotlin.collections.ArraysKt:
     public static java.lang.Object getOrNull(java.lang.Object[],int)
 kotlin.collections.ArraysKt___ArraysJvmKt:
-    public static java.util.List asList(java.lang.Object[])
     public static final void fill(java.lang.Object[],int,int)
 kotlin.collections.ArraysKt___ArraysKt
 kotlin.collections.ArraysUtilJVM
@@ -5628,6 +5684,8 @@ kotlin.collections.CollectionsKt:
     public static java.lang.Object last(java.util.List)
     public static final void toCollection(java.lang.Iterable,java.util.AbstractCollection)
     public static java.util.Set toMutableSet(java.util.Set)
+kotlin.collections.CollectionsKt__CollectionsJVMKt:
+    public static void terminateCollectionToArray(int,java.lang.Object[])
 kotlin.collections.CollectionsKt__CollectionsKt:
     public static java.util.List emptyList()
     public static kotlin.ranges.IntRange getIndices(java.util.Collection)
@@ -5667,6 +5725,18 @@ kotlin.collections.SlidingWindowKt$windowedIterator$1:
 kotlin.collections.SlidingWindowKt
 kotlin.collections.State:
     public static final synthetic kotlin.enums.EnumEntries $ENTRIES
+kotlin.collections.builders.ListBuilder$Companion
+kotlin.collections.builders.ListBuilder:
+    public static final kotlin.collections.builders.ListBuilder$Companion Companion
+    public static java.util.List build()
+    public static boolean contentEquals()
+    public static void ensureCapacityInternal()
+    public static void ensureExtraCapacity()
+    public final int getSize()
+    public static boolean isEffectivelyReadOnly()
+    public final void registerModification()
+    public final java.lang.Object removeAt()
+kotlin.collections.builders.ListBuilderKt
 kotlin.comparisons.ComparisonsKt
 kotlin.comparisons.ComparisonsKt___ComparisonsJvmKt
 kotlin.comparisons.ComparisonsKt___ComparisonsKt

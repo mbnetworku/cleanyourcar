@@ -139,9 +139,10 @@ class VideoActivity : Activity() {
         Themes.update(prefs)
         accent = Themes.accent(prefs)
         build()
+        Storage.ensure(this, "your videos")
         if (Build.VERSION.SDK_INT >= 23) {
             val perm = if (Build.VERSION.SDK_INT >= 33) "android.permission.READ_MEDIA_VIDEO" else android.Manifest.permission.READ_EXTERNAL_STORAGE
-            if (checkSelfPermission(perm) != android.content.pm.PackageManager.PERMISSION_GRANTED) requestPermissions(arrayOf(perm), 4)
+            if (Build.VERSION.SDK_INT < 30 && checkSelfPermission(perm) != android.content.pm.PackageManager.PERMISSION_GRANTED) requestPermissions(arrayOf(perm), 4)
         }
         if (VideoLibrary.videos.isEmpty()) rescan() else showGrid()
         playFromIntent(intent)
@@ -174,6 +175,7 @@ class VideoActivity : Activity() {
             addDataScheme("file")
         })
         ui.post(tick)
+        if (Storage.hasAccess(this) && VideoLibrary.videos.isEmpty() && !VideoLibrary.scanning) rescan()
     }
 
     override fun onPause() {
@@ -265,8 +267,10 @@ class VideoActivity : Activity() {
         video.setOnTouchListener { _, e -> if (e.action == android.view.MotionEvent.ACTION_UP) showControls(controls.visibility != View.VISIBLE); true }
         video.setOnPreparedListener { video.start(); showControls(true) }
         video.setOnCompletionListener { if (playIndex < playlist.lastIndex) playAt(playIndex + 1) else closePlayer() }
-        video.setOnErrorListener { _, _, _ ->
-            Toast.makeText(this, "Can't play this video format on this device", Toast.LENGTH_SHORT).show()
+        video.setOnErrorListener { _, what, extra ->
+            val f = File(playlist.getOrNull(playIndex)?.path ?: "")
+            val why = when { !f.canRead() -> "no permission to read it. Allow \"All files access\" in Settings → Launcher → Permissions"; what == 1 && extra == -1010 -> "this video format isn't supported here"; else -> "player error $what/$extra" }
+            Toast.makeText(this, "Can't play ${f.name}: $why", Toast.LENGTH_LONG).show()
             if (playIndex < playlist.lastIndex) playAt(playIndex + 1) else closePlayer()
             true
         }
@@ -328,7 +332,7 @@ class VideoActivity : Activity() {
         setContentView(root)
         library.alpha = 0f
         library.translationY = px(40).toFloat()
-        library.animate().alpha(1f).translationY(0f).setDuration(320).setInterpolator(DecelerateInterpolator()).start()
+        library.animate().alpha(1f).translationY(0f).setDuration(180).setInterpolator(DecelerateInterpolator()).start()
     }
 
     // ---- library ----

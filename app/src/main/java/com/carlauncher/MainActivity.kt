@@ -135,6 +135,8 @@ class MainActivity : Activity() {
 
         speedo.post { speedo.playIntro() }
         AppPicker.preload(this)
+        // First open after installing: ask for everything on one screen.
+        if (!prefs.getBoolean("perm_setup_done", false)) startActivity(Intent(this, PermissionsActivity::class.java))
         try { AudioFx.attach(this) } catch (e: Throwable) { }
         Wallpapers.autoIfDue(this) { applyTheme() }
         if (prefs.getBoolean("auto_free", false)) Thread { Boost.free(this) }.start()
@@ -456,7 +458,8 @@ class MainActivity : Activity() {
         if (Build.VERSION.SDK_INT >= 23 &&
             checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
         ) {
-            if (!askedPermission) {
+            // The Permissions screen asks for location itself; a second request here would block its buttons.
+            if (!askedPermission && prefs.getBoolean("perm_setup_done", false)) {
                 askedPermission = true
                 requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1)
             }

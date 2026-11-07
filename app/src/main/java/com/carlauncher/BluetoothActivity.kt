@@ -216,7 +216,7 @@ class BluetoothActivity : Activity() {
         listOf(nav, panel).forEachIndexed { i, v ->
             v.alpha = 0f
             v.translationY = px(40).toFloat()
-            v.animate().alpha(1f).translationY(0f).setStartDelay(70L * i).setDuration(320).setInterpolator(DecelerateInterpolator()).start()
+            v.animate().alpha(1f).translationY(0f).setStartDelay(30L * i).setDuration(180).setInterpolator(DecelerateInterpolator()).start()
         }
     }
 
@@ -272,7 +272,49 @@ class BluetoothActivity : Activity() {
 
     // ---- Devices ----
 
+    /**
+     * The head unit's own Bluetooth phone app. Most Android car radios run calls and phone music through a
+     * separate Bluetooth chip controlled only by that app, so connecting the phone there is what works.
+     */
+    private fun carBtApp(): Pair<String, String>? {
+        val pm = packageManager
+        val known = listOf("goodocom", "com.tw.bt", "syu.bt", "nwd.bt", "btphone", "bluetoothphone", "com.ts.bt", "hzbhd.bt", "yt.bt", "carbt", ".bt")
+        return pm.queryIntentActivities(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER), 0)
+            .map { it.activityInfo.packageName to it.loadLabel(pm).toString() }
+            .filter { (p, l) ->
+                p != packageName && !p.startsWith("com.android") && !p.startsWith("com.google") &&
+                    (known.any { p.lowercase().contains(it) } || l.lowercase().let { x -> x.contains("bluetooth") || x.contains("bt ") || x == "bt" || x.contains("phone") || x.contains("蓝牙") })
+            }
+            .firstOrNull()
+    }
+
+    /** Big button to the car's own Bluetooth app, shown on every tab when one exists. */
+    private fun carBtButton() {
+        val (pkg, name) = carBtApp() ?: return
+        val r = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(px(16), px(12), px(16), px(12))
+            background = GradientDrawable().apply { cornerRadius = px(16).toFloat(); setColor((0x44 shl 24) or (accent and 0xFFFFFF)) }
+        }
+        r.addView(text("Phone calls and phone music on this radio work through its own Bluetooth app.", 14f, Color.WHITE))
+        r.addView(button("Open the car's Bluetooth:  $name", 17f, 52, sel = true) {
+            packageManager.getLaunchIntentForPackage(pkg)?.let { startActivity(it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+        }, LinearLayout.LayoutParams(wrap, px(52)).apply { topMargin = px(10) })
+        content.addView(r, LinearLayout.LayoutParams(match, wrap).apply { bottomMargin = px(12) })
+    }
+
+    /** Android 12+ needs the "Nearby devices" permission before anything Bluetooth works. */
+    private fun needsBtPermission(): Boolean =
+        Build.VERSION.SDK_INT >= 31 && checkSelfPermission("android.permission.BLUETOOTH_CONNECT") != android.content.pm.PackageManager.PERMISSION_GRANTED
+
     private fun devicesTab() {
+        carBtButton()
+        if (needsBtPermission()) {
+            note("Bluetooth needs the \"Nearby devices\" permission.")
+            content.addView(button("Allow Bluetooth", 16f, 50, sel = true) { startActivity(Intent(this, PermissionsActivity::class.java)) },
+                LinearLayout.LayoutParams(wrap, px(50)))
+            return
+        }
         val a = bt ?: run { title("No Bluetooth on this device"); return }
         val bar = LinearLayout(this)
         bar.addView(button(if (a.isEnabled) "Turn off" else "Turn on", 15f, 46) {
@@ -323,12 +365,18 @@ class BluetoothActivity : Activity() {
             } catch (e: Throwable) { }
         }
         Toast.makeText(this, "Connecting to ${d.name ?: d.address}…", Toast.LENGTH_SHORT).show()
+        ui.postDelayed({
+            if (connectedDevice()?.address != d.address) Toast.makeText(this,
+                if (Build.VERSION.SDK_INT >= 31) "Android ${Build.VERSION.RELEASE} only lets the radio's own Bluetooth app connect phones." + (if (carBtApp() != null) " Use \"Open the car's Bluetooth\"." else "")
+                else "Couldn't connect. Make sure the phone is unlocked and nearby.", Toast.LENGTH_LONG).show()
+        }, 6000)
         ui.postDelayed({ refreshHeader(); if (tab == 0) show(0) }, 3000)
     }
 
     // ---- Music from the phone ----
 
     private fun musicTab() {
+        carBtButton()
         title("Phone music")
         if (!phoneMusicSupported) note("This unit's Bluetooth can't receive music from a phone (no A2DP-sink profile). On a car head unit with phone-music support, the song from your phone shows here.")
         val c = np.controller
@@ -374,6 +422,7 @@ class BluetoothActivity : Activity() {
     // ---- Phone (hands-free calls) ----
 
     private fun phoneTab() {
+        carBtButton()
         title("Phone")
         if (!callsSupported) note("This unit's Bluetooth can't make calls through a phone (no hands-free client profile). On a car head unit with calling support, calls dial through your connected phone.")
         val display = text(if (number.isEmpty()) "Enter a number" else number.toString(), 34f, if (number.isEmpty()) 0x88FFFFFF.toInt() else Color.WHITE, bold = true).apply {
